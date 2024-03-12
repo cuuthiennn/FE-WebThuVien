@@ -19,6 +19,11 @@
 	color: black;
 }
 
+#product-card img {
+	width: 100%;
+	height: 100%;
+}
+
 #col {
 	margin: 1000px;
 }
@@ -31,6 +36,10 @@
 #header {
 	display: grid;
     grid-template-columns: repeat(1, 1fr);
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	background-color: white;
 }
 
 #footer {
@@ -42,7 +51,7 @@
 
 }
 
-@media (max-width: 540px) {
+@media (max-width: 570px) {
 	#product-list {
 		grid-template-columns: repeat(1, 1fr);
 	}
@@ -64,9 +73,21 @@
 
 	#slidebar {
 		display: none;
+		background-color: white;
 	}
+
+}
+
+#page a {
+	text-decoration: none;
+	color: black;
+}
+
+#recomments {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
 }
 
 .btn-label {position: relative;left: -12px;display: inline-block;padding: 6px 12px;background: rgba(0,0,0,0.15);border-radius: 3px 0 0 3px;}
 .btn-labeled {padding-top: 0;padding-bottom: 0;}
-.btn { margin-bottom:10px; }
+.btn { margin-bottom:20px; }

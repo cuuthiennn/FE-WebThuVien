@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/styte.css">
+    <title>BookStore.org</title>
+    <link rel="icon" href="img/open-book.png" sizes="16x16 32x32" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="img/open-book.png" sizes="16x16 32x32" type="img/png">
+</head>
+<body>
+    <div id="header" class="row">
+        <div id="header-1" class="row">
+            <div class="col-md-3 d-flex justify-content-around">
+                <nav class="navbar navbar-light bg-body-tertiary">
+                    <label class="container-fluid">
+                        <a class="navbar-brand" href="/index.html">
+                        <img
+                            src="img/open-book.png"
+                            class="me-2"
+                            height="50"
+                            alt="MDB Logo"
+                            loading="lazy"
+                        />
+                        <small>BookStore.org</small>
+                        </a>
+                    </label>
+                </nav>
+            </div>
+            <div id="header-search" class="col-md-6 d-flex align-items-center" >
+                <!-- <div class="row mt-5"> -->
+                    <div class="col-md-8 mx-auto">
+                        <div class="input-group">
+                            <input class="form-control border" type="search" value="search" id="example-search-input">
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+            <div class="col-md-3 d-flex justify-content-sm-around d-flex align-items-center">
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr);" class="row">
+                    <div class="col-md-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                        </svg>
+                    </div>
+                    <div class="col-md-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="slidebar" class="d-flex justify-content-center">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gift Cards</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Special Offers</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                            <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                            <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item has-dropdown is-hoverable">
+                            <a class="nav-link" href="#">Giveaways!</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">New Books</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Wishlists & Registries</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Best Sellers</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Fiction</a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                            <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                            <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Nonfiction</a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                            <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                            <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">YA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kids</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Games & Puzzles</a>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+        </div>
+
+        <div id="body-product" class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <a href="#body-product">
+                            <img class="rounded img-thumbnail" src="https://images-us.bookshop.org/ingram/9781250890597.jpg?height=500&v=v2-191c2b4fe20f1bdafb8c85ff0939b3c1" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <h1>Green Dot</h1>
+                        <p>Madeleine Gray (Author)</p>
+                        <div class="fw-bold lead text-dark">
+                            Price:
+                            <span class="text-dark">$26.03</span>
+                        </div>
+                        <form action="" class="mt-5">
+                            <button type="submit" class="btn btn-labeled btn-success">
+                                <span class="btn-label">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                                    </svg>
+                                </span>Shop</button>
+                            <button type="submit" class="btn btn-labeled btn-warning">
+                                <span class="btn-label">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                                    </svg>
+                                </span>Wishlist</button>
+                        </form>
+                        <div style="padding-bottom: 20px;">
+                            <div href="https://www.trustpilot.com/review/bookshop.org?utm_medium=trustbox&amp;utm_source=Mini" target="_blank" class="BSP_009357--wrapper-banner">
+                                <div class="BSP_009357--trustpilot-reviews" style="display: inline;">
+                                    <div class="BSP_009357-stars-and-ratings" style="display: flex;">
+                                        <div class="BSP_009357-stars">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="146" height="28" viewBox="0 0 146 28" fill="none">
+                                                <path d="M27.657 0.394531H0.489258V27.5623H27.657V0.394531Z" fill="#00B67A"></path>
+                                                <path d="M57.0886 0.394531H29.9209V27.5623H57.0886V0.394531Z" fill="#00B67A"></path>
+                                                <path d="M86.5203 0.394531H59.3525V27.5623H86.5203V0.394531Z" fill="#00B67A"></path>
+                                                <path d="M115.952 0.394531H88.7842V27.5623H115.952V0.394531Z" fill="#00B67A"></path>
+                                                <path d="M145.384 0.394531H118.216V27.5623H145.384V0.394531Z" fill="#00B67A"></path>
+                                                <path d="M14.0732 18.7048L18.2049 17.6578L19.9312 22.9781L14.0732 18.7048ZM23.5819 11.828H16.3088L14.0732 4.97949L11.8375 11.828H4.56445L10.4508 16.073L8.21512 22.9215L14.1015 18.6765L17.7238 16.073L23.5819 11.828Z" fill="white"></path>
+                                                <path d="M43.5048 18.7048L47.6366 17.6578L49.3628 22.9781L43.5048 18.7048ZM53.0135 11.828H45.7405L43.5048 4.97949L41.2691 11.828H33.9961L39.8824 16.073L37.6468 22.9215L43.5331 18.6765L47.1555 16.073L53.0135 11.828Z" fill="white"></path>
+                                                <path d="M72.9364 18.7048L77.0682 17.6578L78.7945 22.9781L72.9364 18.7048ZM82.4451 11.828H75.1721L72.9364 4.97949L70.7008 11.828H63.4277L69.3141 16.073L67.0784 22.9215L72.9647 18.6765L76.5871 16.073L82.4451 11.828Z" fill="white"></path>
+                                                <path d="M102.368 18.7048L106.5 17.6578L108.226 22.9781L102.368 18.7048ZM111.877 11.828H104.604L102.368 4.97949L100.132 11.828H92.8594L98.7457 16.073L96.51 22.9215L102.396 18.6765L106.019 16.073L111.877 11.828Z" fill="white"></path>
+                                                <path d="M131.8 18.7048L135.931 17.6578L137.658 22.9781L131.8 18.7048ZM141.308 11.828H134.035L131.8 4.97949L129.564 11.828H122.291L128.177 16.073L125.942 22.9215L131.828 18.6765L135.45 16.073L141.308 11.828Z" fill="white"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="BSP_009357-rating" style="padding-left: 10px;">4.9/5.0</div>
+                                    </div>
+                                    <div class="BSP_009357-logo-and-reviews-number" style="display: flex;">
+                                        <div class="BSP_009357-logo">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="88" height="22" viewBox="0 0 88 22" fill="none">
+                                                <g clip-path="url(#clip0_966_20)">
+                                                    <path d="M23.4305 7.82973H32.2747V9.45031H28.7977V18.5623H26.8844V9.45031H23.4224V7.8291H23.4299L23.4305 7.82973ZM31.8972 10.7907H33.5321V12.2908H33.5627C33.617 12.0787 33.7168 11.874 33.8635 11.6768C34.177 11.2542 34.6014 10.9265 35.0897 10.7302C35.3377 10.6319 35.6017 10.5805 35.8685 10.5785C36.0681 10.5785 36.2154 10.586 36.2928 10.5941C36.3695 10.6016 36.4463 10.6166 36.5312 10.6241V12.2752C36.4059 12.2533 36.28 12.2357 36.1536 12.2222C36.0281 12.2074 35.9019 12.1999 35.7755 12.1997C35.4822 12.1997 35.2051 12.2603 34.943 12.3745C34.6809 12.4874 34.4569 12.6615 34.2647 12.8818C34.0596 13.1281 33.9026 13.4107 33.8017 13.7149C33.6863 14.0481 33.632 14.4262 33.632 14.8587V18.5548H31.8897V10.7907H31.8972ZM44.543 18.5629H42.8313V17.4796H42.8001C42.5842 17.874 42.2684 18.1847 41.8441 18.4194C41.4197 18.654 40.9879 18.775 40.5486 18.775C39.5077 18.775 38.7514 18.5254 38.2897 18.0175C37.8266 17.5102 37.5951 16.7451 37.5951 15.7223V10.7913H39.338V15.5557C39.338 16.2378 39.469 16.7226 39.7393 17.0028C40.0013 17.283 40.3789 17.4272 40.8569 17.4272C41.2269 17.4272 41.5277 17.3741 41.7742 17.2599C42.0213 17.1464 42.2216 17.0028 42.3682 16.8131C42.5224 16.6315 42.6303 16.4044 42.7002 16.1467C42.7689 15.8889 42.8001 15.6088 42.8001 15.3061V10.7988H44.543V18.5629ZM47.5114 16.0712C47.5657 16.5704 47.7579 16.9198 48.0899 17.1239C48.4287 17.3211 48.83 17.4272 49.3005 17.4272C49.4627 17.4272 49.6474 17.4116 49.8559 17.3891C50.0637 17.366 50.264 17.313 50.4418 17.2456C50.6265 17.1769 50.7726 17.0708 50.8961 16.9348C51.0122 16.7975 51.0658 16.624 51.0584 16.4044C51.0574 16.3024 51.0349 16.2019 50.9924 16.1092C50.95 16.0165 50.8884 15.9338 50.8119 15.8665C50.6571 15.723 50.4649 15.6169 50.2253 15.5258C49.9583 15.4333 49.6852 15.3599 49.4078 15.3061C49.0996 15.2456 48.7913 15.1769 48.4755 15.1089C48.1574 15.0401 47.8433 14.9541 47.5345 14.8512C47.2449 14.7584 46.9718 14.6204 46.7252 14.4425C46.4849 14.2748 46.2889 14.0512 46.1542 13.791C46.0082 13.5258 45.9383 13.2 45.9383 12.8063C45.9383 12.382 46.0462 12.0338 46.2546 11.7455C46.4649 11.4596 46.7363 11.2242 47.049 11.0565C47.3851 10.8789 47.7465 10.7536 48.1205 10.6852C48.5136 10.6172 48.8918 10.5792 49.2462 10.5792C49.6549 10.5792 50.0481 10.6247 50.4187 10.7083C50.7776 10.7852 51.1196 10.9262 51.4284 11.1246C51.7292 11.3143 51.9757 11.5639 52.1766 11.8671C52.3769 12.1698 52.5005 12.5411 52.5541 12.9729H50.7345C50.6496 12.5642 50.4643 12.284 50.1641 12.1473C49.8634 12.0038 49.5164 11.9352 49.1308 11.9352C49.0072 11.9352 48.8606 11.9426 48.6914 11.9657C48.5285 11.9874 48.3681 12.0255 48.2128 12.0793C48.0709 12.1316 47.942 12.2142 47.8353 12.3214C47.7835 12.3774 47.7432 12.443 47.7167 12.5145C47.6903 12.586 47.6782 12.6621 47.6812 12.7383C47.6812 12.9504 47.7579 13.1171 47.9046 13.2456C48.0512 13.3741 48.244 13.4802 48.483 13.5713C48.722 13.655 48.9922 13.7305 49.3005 13.791C49.6088 13.8515 49.9245 13.9195 50.249 13.9882C50.5648 14.0562 50.873 14.1473 51.1819 14.2453C51.4902 14.3439 51.7598 14.4805 51.9994 14.6546C52.2384 14.8287 52.4312 15.0409 52.5772 15.2986C52.7239 15.5557 52.8012 15.8815 52.8012 16.2602C52.8012 16.722 52.6933 17.1089 52.4768 17.4346C52.2615 17.7529 51.9838 18.0175 51.6443 18.2147C51.2889 18.4194 50.9039 18.5676 50.503 18.654C50.0951 18.7437 49.6788 18.7893 49.2612 18.79C48.7935 18.7953 48.3271 18.7393 47.874 18.6234C47.4496 18.5098 47.0796 18.3432 46.7713 18.1242C46.4667 17.9028 46.2162 17.6152 46.0387 17.283C45.8615 16.9498 45.7685 16.5479 45.7536 16.0861H47.5114V16.0712ZM53.2636 10.7919H54.5822V8.45811H56.3251V10.7919H57.8976V12.0712H56.3257V16.2228C56.3257 16.4038 56.3332 16.556 56.3488 16.6921C56.3638 16.8212 56.4025 16.9348 56.4568 17.0253C56.5157 17.1204 56.6053 17.1925 56.7107 17.23C56.8268 17.2755 56.9728 17.2986 57.1738 17.2986C57.2967 17.2986 57.4202 17.2986 57.5438 17.2905C57.6674 17.283 57.7903 17.268 57.9138 17.2375V18.5629C57.721 18.586 57.5282 18.6009 57.351 18.6234C57.1642 18.6451 56.9762 18.6553 56.7881 18.654C56.3257 18.654 55.9557 18.6084 55.6774 18.5254C55.4003 18.4418 55.1763 18.3133 55.0221 18.1467C54.8599 17.98 54.76 17.7754 54.6983 17.5251C54.6382 17.2437 54.6048 16.9573 54.5984 16.6696V12.0855H53.2799V10.7901H53.2643L53.2636 10.7919ZM59.1313 10.7919H60.7818V11.844H60.813C61.0589 11.3898 61.3984 11.0715 61.8377 10.8749C62.2867 10.6753 62.7734 10.5744 63.2648 10.5792C63.8888 10.5792 64.4286 10.6852 64.8916 10.9049C65.354 11.1171 65.7397 11.4129 66.048 11.791C66.3562 12.1698 66.5802 12.6091 66.7344 13.1096C66.8914 13.6302 66.9695 14.1714 66.9659 14.7152C66.9659 15.2375 66.8966 15.7448 66.7575 16.2303C66.6297 16.6986 66.418 17.1398 66.1328 17.5326C65.8525 17.9113 65.4884 18.2199 65.0689 18.4343C64.637 18.6615 64.136 18.775 63.55 18.775C63.2939 18.7748 63.0383 18.7518 62.7862 18.7064C62.5348 18.6611 62.2892 18.5876 62.0542 18.4874C61.8208 18.39 61.6024 18.2597 61.4059 18.1005C61.2118 17.9457 61.0428 17.762 60.9048 17.5557H60.8736V21.434H59.1313V10.7907V10.7919ZM65.223 14.6846C65.2233 14.3392 65.1767 13.9953 65.0845 13.6624C64.999 13.3471 64.8578 13.0495 64.6676 12.7838C64.4871 12.5311 64.2529 12.3214 63.9818 12.1698C63.6906 12.0125 63.3643 11.9317 63.0333 11.9352C62.3007 11.9352 61.7453 12.1848 61.3753 12.6852C61.0052 13.1851 60.8199 13.8521 60.8199 14.6846C60.8199 15.0783 60.8667 15.4422 60.9666 15.7754C61.0664 16.1086 61.2056 16.3969 61.4059 16.639C61.5993 16.8818 61.8302 17.0708 62.1004 17.2069C62.37 17.351 62.6864 17.419 63.0408 17.419C63.442 17.419 63.7734 17.3361 64.0511 17.1769C64.32 17.0222 64.5516 16.8102 64.7294 16.556C64.9066 16.2983 65.0383 16.01 65.115 15.6849C65.186 15.3562 65.2222 15.0209 65.223 14.6846ZM68.2994 7.82973H70.0423V9.45093H68.2994V7.82973ZM68.2994 10.7913H70.0423V18.5629H68.2994V10.7913ZM71.5999 7.82973H73.3428V18.5629H71.5999V7.82973ZM78.6862 18.775C78.0535 18.775 77.4906 18.669 76.9976 18.4649C76.525 18.2711 76.0973 17.9822 75.7409 17.6162C75.3944 17.2429 75.129 16.8018 74.9615 16.3208C74.778 15.7898 74.6869 15.2313 74.6919 14.6696C74.6919 14.0787 74.7842 13.5339 74.9615 13.0334C75.1291 12.5526 75.3945 12.1118 75.7409 11.7386C76.0797 11.3748 76.504 11.0946 76.9976 10.8899C77.4906 10.6852 78.0535 10.5792 78.6862 10.5792C79.3184 10.5792 79.8812 10.6852 80.3748 10.8899C80.8684 11.0946 81.2847 11.3829 81.6316 11.7386C81.978 12.1116 82.2432 12.5526 82.4104 13.0334C82.5876 13.5333 82.68 14.0787 82.68 14.6696C82.68 15.2687 82.5876 15.8209 82.4104 16.3208C82.2433 16.8019 81.9781 17.243 81.6316 17.6162C81.2921 17.98 80.8684 18.2602 80.3748 18.4649C79.8812 18.669 79.3184 18.775 78.6862 18.775ZM78.6862 17.419C79.0719 17.419 79.4107 17.3361 79.6959 17.1769C79.9739 17.0222 80.2137 16.8073 80.3979 16.5479C80.5826 16.2908 80.7137 15.995 80.8067 15.6693C80.8915 15.3436 80.9377 15.0103 80.9377 14.6696C80.9377 14.3364 80.8915 14.0106 80.8067 13.6774C80.7272 13.3613 80.5885 13.0632 80.3979 12.7988C80.2133 12.5419 79.9734 12.3297 79.6959 12.1779C79.4107 12.0188 79.0719 11.9352 78.6862 11.9352C78.3006 11.9352 77.9611 12.0188 77.6759 12.1779C77.4002 12.332 77.161 12.5438 76.9745 12.7988C76.7867 13.0648 76.6482 13.3624 76.5658 13.6774C76.4804 14.0013 76.4362 14.3347 76.4341 14.6696C76.4341 15.0103 76.4809 15.3436 76.5658 15.6693C76.6507 15.995 76.7892 16.2908 76.9745 16.5479C77.1593 16.8056 77.3908 17.0178 77.6759 17.1769C77.9611 17.3435 78.3006 17.419 78.6862 17.419ZM83.1892 10.7919H84.5077V8.45811H86.2506V10.7919H87.8232V12.0712H86.2506V16.2228C86.2506 16.4038 86.2581 16.556 86.2731 16.6921C86.2887 16.8212 86.3274 16.9348 86.3817 17.0253C86.4405 17.1205 86.5301 17.1927 86.6356 17.23C86.7517 17.2755 86.8977 17.2986 87.0987 17.2986C87.2216 17.2986 87.3451 17.2986 87.4687 17.2905C87.5923 17.283 87.7152 17.268 87.8387 17.2375V18.5629C87.6459 18.586 87.4531 18.6009 87.2759 18.6234C87.0891 18.6451 86.9011 18.6553 86.713 18.654C86.2506 18.654 85.8799 18.6084 85.6023 18.5254C85.3252 18.4418 85.1012 18.3133 84.947 18.1467C84.7854 17.98 84.6849 17.7754 84.6232 17.5251C84.5632 17.2437 84.5298 16.9573 84.5233 16.6696V12.0855H83.2048V10.7901H83.1892V10.7919Z" fill="#2B0F42"></path> <path d="M21.4083 7.65445H13.4202L10.9528 0.185547L8.47672 7.65507L0.489258 7.64696L6.95848 12.2672L4.48361 19.728L10.9528 15.1152L17.4146 19.728L14.9472 12.2672L21.4083 7.65445Z" fill="#04DA8D"></path>
+                                                    <path d="M15.5017 13.9568L14.9464 12.2676L10.9526 15.1156L15.5017 13.9568Z" fill="#126849"></path>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_966_20">
+                                                        <rect width="87.3629" height="21.2167" fill="white" transform="translate(0.489258 0.185547)"></rect>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <div class="BSP_009357-reviews-number" style="padding-left: 10px;">21,000+&nbsp;Reviews</div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <h1>Description</h1>
+                        <p>
+                            "Madeleine Gray takes a scalpel to millennial malaise, office romance, and infidelity, and the result is a brainy, 
+                            gutsy, nervy--and hilarious--wonder of a novel." <br>
+                            --Meg Howrey, author of They're Going to Love You <br>
+                            An irresistible and messy love story about the terrible allure of wanting something that promises nothing <br>
+                            At twenty-four, Hera is a clump of unmet potential. To her, the future is nothing but an exhausting thought exercise, 
+                            one depressing hypothetical after another. She's sharp in more ways than one, adrift in her own smug malaise, until 
+                            her new job moderating the comments section of an online news outlet--a role even more mind-numbing than it 
+                            sounds--introduces her to Arthur, a middle-aged journalist. Though she's preferred women to men for years now, 
+                            she soon finds herself falling into an all-consuming affair with him. She is coming apart with want and loving every 
+                            second of it! Well, except for the tiny hiccup that Arthur has a wife--and that she has no idea Hera exists. <br>
+                            With its daringly specific and intimate voice, Green Dot is a darkly hilarious and deeply felt examination of the joys 
+                            and indignities of coming into adulthood against the pitfalls of the twenty-first century and the winding, tortuous, 
+                            and often very funny journey we take in deciding who we are and who we want to be. <br>
+                        </p>
+                        <h1>About the Author</h1>
+                        <p>
+                            Madeleine Gray is a writer and critic from Sydney. She has written for the Times Literary Supplement, the Guardian, 
+                            the BBC, Electric Literature, Sydney Review of Books, and other publications. In 2019 she was a CA-SRB Emerging 
+                            Critic, and in 2021 she was a finalist for the Pascall Prize for Arts Criticism, a finalist for the Woollahra Digital 
+                            Literary Non-Fiction Award, and a recipient of a Neilma Sidney Literary Travel Fund grant. She has an MSt in English 
+                            from the University of Oxford and is a current doctoral candidate at the University of Manchester. Green Dot is her 
+                            first novel.
+                        </p>
+                        <h1>Reviews</h1>
+                        <p>
+                            An IndieNext Pick for March 2024 <br>
+                            Named a Most Anticipated Book of 2024 by Debutiful <br>
+                            Named one of Electric Literature's "42 Queer Books You Need to Read in 2024" <br>
+                            "An exceptionally funny debut . . . Perceptive and hilarious, Hera charges ahead, fully aware of the trope into which 
+                            she has stumbled. Gray's prose circumvents any hint of banality; the language is too raw, too funny, too 
+                            simultaneously irreverent and vulnerable." <br>
+                            -Jackie Thomas-Kennedy, Star Tribune <br>
+                            "Conversations with Friends meets Several People Are Typing." <br>
+                            --Michelle Hart, Electric Literature <br>
+                            "By the time Hera finds out that Arthur is married, it's already too late--she's enamored. Gray's writing skillfully 
+                            captures the passion of their early trysts. The sex scenes crackle with energy, and the chemistry between Hera and 
+                            Arthur is believable and seductive. . . A breezy, heartfelt coming-of-age story for Gen Zers concerned with how to 
+                            grow up without growing cold." <br>
+                            --Kirkus Reviews <br>
+                            "Hera is vibrantly written, and Gray thankfully provides her narration with enough distance for self-clarity. . . . 
+                            Gray's unflinching bildungsroman is great fun." <br>
+                            --Publishers Weekly <br>
+                            "This book! What a gutting, funny, smart, smart, smart book it is, one that I absolutely inhaled while almost 
+                            constantly emotionally bracing myself. Madeleine Gray is a hilarious, humane, and highly perceptive writer." <br>
+                            --Claire Lombardo, New York Times bestselling author of The Most Fun We Ever Had <br>
+                            "I wolfed Green Dot down over two nights. An incredibly funny book about a woman having an affair that's a really bad 
+                            idea. Every sentence sparkles." <br>
+                            --Caitlin Moran, New York Times bestselling author of How To Be A Woman <br>
+                            "Madeleine Gray takes a scalpel to millennial malaise, office romance, and infidelity, and the result is a brainy, 
+                            gutsy, nervy--and hilarious--wonder of a novel." <br>
+                            --Meg Howrey, author of They're Going to Love You <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+            </div>
+        </div>
+
+        <div>
+            <h1 style="text-align: center;">Recomments</h1>
+            <div class="row" id="recomments">
+                <div class="d-flex justify-content-center">
+                    <a href="/product-4.html">
+                        <img src="https://images-us.bookshop.org/ingram/9781805302483.jpg?height=500&v=v2" class="rounded img-thumbnail" alt="" />
+                    </a>
+                </div>
+                <div  class="d-flex justify-content-center">
+                    <a href="/product-3.html">
+                        <img src="https://images-us.bookshop.org/ingram/9780593473085.jpg?height=500&v=v2-cca4e3cce09493219bb1d8c5af07f7ab" class="rounded img-thumbnail" alt=""/>
+                    </a>
+                </div>
+                <div  class="d-flex justify-content-center">
+                    <a href="/product-2.html">
+                        <img src="https://images-us.bookshop.org/ingram/9780374610074.jpg?height=500&v=v2-5f5cd59aa37a8bb9ef5db5c71514eb62" class="rounded img-thumbnail" alt="" />
+                    </a>
+                </div>
+                <div  class="d-flex justify-content-center">
+                    <a href="/product-1.html">
+                        <img src="https://images-us.bookshop.org/ingram/9781250289841.jpg?height=500&v=v2-6bb1fa01a4f25a149a7674ba081c7a6f" class="rounded img-thumbnail" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <footer class="py-5">
+                <div id="footer" class="row">
+                    <div>
+                    <h5 class="text-uppercase">About</h5>
+                    <p>
+                        Bookshop.org works to connect readers with independent booksellers all over the world.
+                        ‍We believe local bookstores are essential community hubs that foster culture, curiosity, and a love of reading, and we're committed to helping them thrive. <br>
+                        Every purchase on the site financially supports independent bookstores. 
+                        Our platform gives independent bookstores tools to compete online and financial support to help them maintain their presence in local communities.
+                    </p>
+                    </div>
+        
+                    <div></div>
+            
+                    <div>
+                    <h5>CONTACT</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        </svg>
+                        New York, NY 10012, US
+                        </li>
+                        <li class="nav-item mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                        </svg>
+                        info@example.com
+                        </li>
+                        <li class="nav-item mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                        </svg>
+                        + 01 234 567 88
+                        </li>
+                        <li class="nav-item mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                        </svg>
+                        + 01 234 567 89
+                        </li>
+                    </ul>
+                    </div>
+            
+                </div>
+                <div class="d-flex justify-content-between py-4 my-4 border-top">
+                    <p>©BookStore.org</p>
+                    <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+                    </ul>
+                </div>
+                </footer>
+            </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
